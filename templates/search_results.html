@@ -3,10 +3,10 @@
 
 {% block content %}
 
-<h2>This is the results of your search</h2>
+<h2>Your results:</h2>
 {% for post in queryset %}
-    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-    <br />
+<a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+<br />
 {% endfor %}
 
 {% endblock %}

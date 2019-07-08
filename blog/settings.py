@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     
     'sorl.thumbnail', # required for thumbnail support
     'django_instagram',
+    #'django_blog', #new
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -179,3 +180,5 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
+
+

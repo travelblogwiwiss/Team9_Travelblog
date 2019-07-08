@@ -37,7 +37,14 @@ urlpatterns = [
     # path('post/<id>/delete/', post_delete, name='post-delete'),
     path('post/<pk>/delete/', PostDeleteView.as_view(), name='post-delete'),
     path('tinymce/', include('tinymce.urls')),
-    path('accounts/', include('allauth.urls'))
+    path('accounts/', include('allauth.urls')),
+    #path('blog/author/', include 'django_blog.urls.authors')
+    #path('authors/', authors, name='authors'),
+
+#url(r'^blog/author/', include('django_blog.urls.authors')),
+#url(r'^blog/category/', include('django_blog.urls.categories')),
+#url(r'^blog/feeds/', include('django_blog.urls.feeds')),
+#url(r'^blog/', include('django_blog.urls.entries')),
 ]
 
 if settings.DEBUG:
